@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+   
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body id="body_bg">
+
+  <!-- for the top bg-section -->
+  <div class="top_bg" id="top_bg"><br /><br />
+    <div class="bg_top">
+      <h1 id="top_bg_h1">Social Media Dashboard</h1>
+      <div class="sub_h1" id="sub_h1">Total Followers: 23,004</div>
+      <div class="hr"><hr /></div>
+      <!-- for the bg_btn-change -->
+      <div class="change_color row">
+        <div class="Dark_mode" id="Dark_mode">Dark Mode</div>
+        <div class="light_mode" id="light_mode">Light Mode</div>
+        <!-- for the btn -->
+        <div>
+          <button onclick="light_bg()" class="light_bg" id="light_bg"></button>
+          <button onclick="dark_bg()" class="dark_bg" id="dark_bg"></button>
+        </div>
+        <!-- end of the btn -->
+      </div>
+      <!-- end of the bg_btn-change -->
+    </div>
+
+  </div>
+  <!-- end of the top bg-section -->
+  
+
+  <!-- for the body section -->
+  <!-- for the top card  -->
+    <div class="top_card_section row">
+      <div class="top_card" id="top_card">
+        <img src="images/icon-facebook.svg"> @nathanf
+        <div class="h1">1987</div>
+        <div class="Followers">Followers</div>
+        <div class="number_per_days">^ 12 Today</div>
+      </div>
+      <div class="top_card" id="top_card">
+        <img src="images/icon-twitter.svg"> @nathanf
+        <div class="h1">1044</div>
+        <div class="Followers">Followers</div>
+        <div class="number_per_days">^ 99 Today</div>
+      </div>
+      <div class="top_card insta" id="top_card">
+        <img src="images/icon-instagram.svg"> @realnathanf
+        <div class="h1">11k </div>
+        <div class="Followers">Followers</div>
+        <div class="number_per_days">^ 1099 Today</div>
+      </div>
+      <div class="top_card utube" id="top_card">
+        <img src="images/icon-youtube.svg"> Nathan F.
+        <div class="h1">8239  </div>
+        <div class="Followers">Subscribers</div>
+        <div class="number_per_days" style="color: hsl(356, 69%, 56%);">^ 144 Today</div>
+      </div>
+    </div>
+
+  <div class="body_section">
+    <h2 id="h2">Overview - Today</h2>
+    <!-- All Cards -->
+    <div class="body_card_section row">
+      <!-- card_1 -->
+      <div class="body_card">
+          <div class="body_page_view">Page Views</div>
+          <div class="body_icon"><img src="images/icon-facebook.svg"></div>
+          <div class="body_number">87</div>
+          <div class="body_persent">^ 3%</div>
+      </div>
+      <!-- card_2 -->
+      <div class="body_card">
+          <div class="body_page_view">Likes</div>
+          <div class="body_icon"><img src="images/icon-facebook.svg"></div>
+          <div class="body_number">52</div>
+          <div class="body_persent" style="color: hsl(356, 69%, 56%);">^ 2%</div>
+      </div>
+      <!-- card_3 -->
+      <div class="body_card">
+          <div class="body_page_view">Likes</div>
+          <div class="body_icon"><img src="images/icon-instagram.svg"></div>
+          <div class="body_number">5462</div>
+          <div class="body_persent">^ 2257%</div>
+      </div>
+      <!-- card_4 -->
+      <div class="body_card">
+          <div class="body_page_view">Profile Views</div>
+          <div class="body_icon"><img src="images/icon-instagram.svg"></div>
+          <div class="body_number">52k</div>
+          <div class="body_persent">^ 1375%</div>
+      </div>
+      <!-- card_5 -->
+      <div class="body_card">
+          <div class="body_page_view">Retweets</div>
+          <div class="body_icon"><img src="images/icon-twitter.svg"></div>
+          <div class="body_number">117</div>
+          <div class="body_persent">^ 303%</div>
+      </div>
+      <!-- card_6 -->
+      <div class="body_card">
+          <div class="body_page_view">Likes</div>
+          <div class="body_icon"><img src="images/icon-twitter.svg"></div>
+          <div class="body_number">507</div>
+          <div class="body_persent">^ 553%</div>
+      </div>
+      <!-- card_7 -->
+      <div class="body_card">
+          <div class="body_page_view">Likes</div>
+          <div class="body_icon"><img src="images/icon-youtube.svg"></div>
+          <div class="body_number">107</div>
+          <div class="body_persent" style="color: hsl(356, 69%, 56%);">^ 19%</div>
+      </div>
+      <!-- card_8 -->
+      <div class="body_card">
+          <div class="body_page_view">Total Views</div>
+          <div class="body_icon"><img src="images/icon-youtube.svg"></div>
+          <div class="body_number">1407</div>
+          <div class="body_persent" style="color: hsl(356, 69%, 56%);">^ 12%</div>
+      </div>
+    </div>
+    <!-- End All Cards -->
+  </div>
+  <!-- end of the body section -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://mc-stephen.000webhostapp.com">Emeka Michael</a>.
+  </div>
+
+  <script type="text/javascript">
+    var top_bg = document.getElementById('top_bg'); 
+    var body_bg = document.getElementById('body_bg');
+    var light_mode = document.getElementById('light_mode');
+    var dark_mode = document.getElementById('Dark_mode');
+    var top_bg_h1 = document.getElementById('top_bg_h1');
+    var sub_h1 = document.getElementById('sub_h1');
+    var top_card = document.querySelectorAll('.top_card');
+    var body_card = document.querySelectorAll('.body_card');
+    var h2 = document.getElementById('h2');
+    var h1 = document.querySelectorAll('.h1');
+    var body_number = document.querySelectorAll('.body_number');
+    var body_page_view = document.querySelectorAll('.body_page_view');
+
+    function light_bg() {
+       document.getElementById('light_bg').style.display = "none";
+       document.getElementById('dark_bg').style.display = "block";
+       top_bg.style.background = "hsl(225, 100%, 98%)";
+       body_bg.style.background = "hsl(0, 0%, 100%)";
+       dark_mode.style.display = "block";
+       light_mode.style.display = "none";
+       top_bg_h1.style.color = "#313030";
+       sub_h1.style.color = "#555";
+       h2.style.color = "#555";
+       for (var i = 0; i < top_card.length; i++) {
+           top_card[i].style.background = "hsl(227, 47%, 96%)";   
+       }
+       for (var i = 0; i < body_card.length; i++) {
+           body_card[i].style.background = "hsl(227, 47%, 96%)";   
+       }
+       for (var i = 0; i < h1.length; i++) {
+           h1[i].style.color = "hsl(230, 17%, 14%)";   
+       }
+       for (var i = 0; i < body_number.length; i++) {
+           body_number[i].style.color = "hsl(230, 17%, 14%)";   
+       }
+       for (var i = 0; i < body_page_view.length; i++) {
+           body_page_view[i].style.color = "hsl(228, 12%, 44%)";   
+       }
+
+     
+    } 
+
+    function dark_bg() {
+       document.getElementById('dark_bg').style.display = "none";
+       document.getElementById('light_bg').style.display = "block";
+       top_bg.style.background = "hsl(232, 19%, 15%)";
+       body_bg.style.background = "hsl(230, 17%, 14%)";
+       dark_mode.style.display = "none";
+       light_mode.style.display = "block";
+       top_bg_h1.style.color = "#fff";
+       sub_h1.style.color = "hsl(228, 34%, 66%)";
+       h2.style.color = "#fff ";
+       for (var i = 0; i < top_card.length; i++) {
+           top_card[i].style.background = "hsl(228, 28%, 20%)";   
+       }
+       for (var i = 0; i < body_card.length; i++) {
+           body_card[i].style.background = "hsl(228, 28%, 20%)";   
+        }
+       for (var i = 0; i < h1.length; i++) {
+           h1[i].style.color = "#fff";   
+       }
+       for (var i = 0; i < body_number.length; i++) {
+           body_number[i].style.color = "hsl(0, 0%, 100%)";   
+       }
+       for (var i = 0; i < body_page_view.length; i++) {
+           body_page_view[i].style.color = "hsl(228, 34%, 66%))";   
+       }
+    } 
+  </script>
+</body>
+</html>

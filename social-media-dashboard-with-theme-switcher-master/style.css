@@ -1,0 +1,217 @@
+.attribution { font-size: 11px; text-align: center;margin-bottom: 10px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial;
+  font-family: [Inter](https://fonts.google.com/specimen/Inter);
+  font-weight:  400px,700px;
+  font-size: 14px;
+  background-color: hsl(230, 17%, 14%);
+}
+.light_bg,.light_mode{
+  display: block;
+}
+.dark_bg,.Dark_mode{
+  display: none;
+}
+.top_bg{
+  width: 100%;
+  height: 300px;
+  margin-top: -20px;
+  background-color: hsl(232, 19%, 15%);
+}
+.bg_top h1{
+  color: #fff;
+  margin-left: 5%;
+}
+.bg_top .hr{
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 25px 0px 25px 0px;
+  background: transparent;
+  color: gray;
+  display: none;
+}
+.bg_top .sub_h1{
+  color: hsl(228, 34%, 66%);
+  margin-left: 5%;
+  margin-top: -10px;
+  font-weight: bold;
+}
+.bg_top .change_color{
+  position: absolute;
+  color: hsl(228, 34%, 66%);
+  margin-left: 75%;
+  z-index: 1;
+  top: 50px;
+  font-weight: bold;
+}
+.bg_top .change_color .light_bg,.bg_top .change_color .dark_bg{
+  position: relative;
+  top: -8px;
+  margin-left: 10px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid hsl(163, 72%, 41%);
+  border-radius: 50px;
+  transition: 1s;
+  background-image: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%))
+}
+.bg_top .change_color .dark_bg{
+  background: hsl(230, 22%, 74%);
+  border: 2px solid hsl(230, 22%, 74%);
+}
+.bg_top .change_color .light_bg::after,.bg_top .change_color .dark_bg::after{
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: hsl(230, 17%, 14%);
+  top: 0px;
+  left: 0px;
+  border-radius: 100%;
+}
+.bg_top .change_color .dark_bg::after{
+  left: 100%;
+  margin-left: -26px;
+  background: #fff;
+}
+.top_card_section{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  width: 95%;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  margin-top: -10%;
+}
+.top_card_section .top_card{
+  text-align: center;
+  color: hsl(228, 34%, 66%);
+  position: sticky;
+  margin: 30px 25px 0px 0px;
+  padding: 20px 10px 10px 10px;
+  width: 250px;
+  height: 185px;
+  background: hsl(228, 28%, 20%);
+  border-radius: 0px 0px 5px 5px; 
+}
+.top_card_section .top_card::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: hsl(208, 92%, 53%);
+  left: 0px;
+  top: -5px; 
+  border-radius: 5px 5px 0px 0px;
+}
+.top_card_section .insta::after{
+  background-image: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.top_card_section .utube::after{
+  background: darkred;
+}
+.top_card_section .top_card img{
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+.top_card_section .top_card .h1{
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+}
+.top_card_section .top_card .Followers{
+  letter-spacing: 5px;
+}
+.top_card_section .top_card .number_per_days{
+  position: relative;
+  top: 30px;
+  color: hsl(163, 72%, 41%);
+  font-weight: bold;
+}
+.body_section{
+  position: relative;
+  background: transparent;
+  margin: 50px 0px 50px 5%;
+}
+.body_section h2{
+  position: relative;
+  color: #fff;
+}
+.body_card_section .body_card{
+  position: sticky;
+  margin: 30px 25px 0px 0px;
+  padding: 10px;
+  width: 250px;
+  height: 100px;
+  background: hsl(228, 28%, 20%);
+  border-radius: 5px; 
+}
+.body_card .body_page_view{
+  color: hsl(228, 34%, 66%);
+  margin: 10px;
+}
+.body_card .body_icon{
+  position: relative;
+  float: right;
+  margin-top: -30px;
+  margin-right: 5px;
+}
+.body_card .body_number{
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  margin: 35px 10px;
+}
+.body_card .body_persent{
+  color: hsl(163, 72%, 41%);
+  font-weight: bold;
+  position: relative;
+  float: right;
+  margin-top: -50px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 625px){
+  .bg_top .hr{
+  display: block;
+  margin-bottom: 0px;
+  }
+  .bg_top .change_color{
+  position: relative;
+  margin-top: -25px;
+  margin-left: 5%;
+  left: 0%;
+  }
+  .bg_top .change_color .light_bg,.bg_top .change_color .dark_bg{
+  position: absolute;
+  right: 20px;
+  margin-bottom: 10px;
+  }
+  .top_card_section{
+    margin-top: -12%;
+  }
+  .top_card_section .top_card{
+  margin-top: 30px;
+  width: 90%;
+  }
+  .body_card_section .body_card{
+  width: 90%;
+  margin-top: 20px;
+  }
+
+}
+
